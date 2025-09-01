@@ -1,13 +1,53 @@
-# HOL
+# Formalizing Higher-Order Logic in Lean
 
-## GitHub configuration
+This project aims to formalize Higher-Order Logic (HOL) using the Lean theorem prover. Higher-Order Logic is a powerful and expressive framework for reasoning about mathematics, computer science, and beyond. By leveraging Lean's capabilities, we aim to create a robust and reusable library for HOL.
 
-To set up your new GitHub repository, follow these steps:
+## Project Structure
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
+- `HOL.lean`: The main entry point for the project.
+- `lakefile.toml`: Configuration file for the Lean project.
+- `lean-toolchain`: Specifies the Lean version used.
+- `HOL/`
+  - `Basic.lean`: Foundational definitions and theorems.
+  - `Section_5_3.lean`: Formalization of concepts from Section 5.3.
+  - `Section_7_1.lean`: Formalization of concepts from Section 7.1.
 
-After following the steps above, you can remove this section from the README file.
+## Getting Started
+
+### Prerequisites
+
+- [Lean](https://leanprover.github.io/) theorem prover
+- [Lake](https://github.com/leanprover/lake) build tool
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sundayyh/HOL-in-Lean.git
+   cd HOL-in-Lean
+   ```
+2. Ensure you have the correct Lean version installed:
+   ```bash
+   lake env lean --version
+   ```
+3. Build the project:
+   ```bash
+   lake build
+   ```
+
+## Usage
+
+Open any of the `.lean` files in your favorite Lean editor (e.g., VS Code with the Lean extension) to explore the formalizations. You can also run proofs and check theorems interactively.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request.
+
+## Acknowledgments
+
+- The Lean community for their support and tools.
+- Authors and researchers in Higher-Order Logic for foundational work.
